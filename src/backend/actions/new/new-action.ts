@@ -44,7 +44,7 @@ export const NewAction: Action<RecordActionResponse> = {
         return {
           redirectUrl: h.resourceUrl({ resourceId: resource._decorated?.id() || resource.id() }),
           notice: {
-            message: translateMessage('successfullyCreated', resource.id()),
+            message: 'translateMessage(successfullyCreated, resource.id())',
             type: 'success',
           },
           record: record.toJSON(currentAdmin),
